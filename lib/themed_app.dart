@@ -7,7 +7,7 @@ class MyThemesApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: myThemeBlue(),
+      theme: myThemeBlue(),         //применяемая тема
       home: const MyThemes(),
     );
   }
