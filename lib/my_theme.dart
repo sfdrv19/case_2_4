@@ -32,27 +32,31 @@ ThemeData myThemeBrown() => ThemeData(
   ),
 );
 
-ThemeData myThemeBlue() => ThemeData(
+ThemeData myThemeDarkBlue() => ThemeData(
 
   splashColor: Colors.tealAccent,
 
   colorScheme: ColorScheme.fromSwatch(
-    brightness: Brightness.light,
+    brightness: Brightness.dark,
     primarySwatch: Colors.blue,
     backgroundColor: Colors.tealAccent,
   ).
   copyWith(secondary: Colors.teal),
 
   textTheme:  const TextTheme(
+
     //заголовок AppBar
     headline6: TextStyle(fontSize: 36.0, fontStyle: FontStyle.italic),
+
     //текст радиокнопок
     subtitle1: TextStyle(
         color: Color(0xFB0F37DF),
         fontSize: 25.0,
         fontWeight: FontWeight.bold),
+
     //текст в Drawer
     bodyText1: TextStyle(fontSize: 20.0, color: Color(0xFF3CA3AC) ),
+
     //заголовок списка в Drawer
     bodyText2: TextStyle(
         fontSize: 18.0,
@@ -60,6 +64,7 @@ ThemeData myThemeBlue() => ThemeData(
         color: Color(0xffa2479b),
         fontWeight: FontWeight.bold,
         fontStyle: FontStyle.italic
+
     ),
   ),
 );
